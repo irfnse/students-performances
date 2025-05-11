@@ -13,12 +13,17 @@ Tingginya angka _dropout_ yang berdampak pada reputasi, pendapatan dan efisiensi
   
 ### Cakupan Proyek
 
-1. Melakukan eksplorasi data dari dataset data.csv
-2. Melakukan persiapan data untuk digunakan analisis
-3. Membuat model prediktif
-4. Melakukan evaluasi model
-5. Melakukan deployment
-6. Membuat bussiness dashboard
+1. Data Understanding 
+- Melakukan eksplorasi data dari dataset data.csv guna mempelajari karakteristik dataset
+2. Data Preparation 
+- Melakukan persiapan data untuk digunakan analisis seperti menghapus row dengan status Enrolled 
+3. Modeling 
+- Membuat model prediktif menggunakan beberapa model dengan rasio training dan test sebanyak 80/20 dan bantuan Gridsearch untuk mendapatkan parameter terbaik
+4. Evaluation 
+- Melakukan evaluasi model menggunakan data test dan menampilkan hasil evaluasi
+5. Deployment 
+- Melakukan deployment model terbaik yaitu GradientBoost dengan bantuan Streamlit
+6. Membuat bussiness dashboard untuk membantu memantau performance metrik dari siswa
 7. Memberikan kesimpulan dan rekomendasi
 
 ### Persiapan
@@ -60,12 +65,10 @@ password: root123
 
 ## Menjalankan Sistem Machine Learning
 
-Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
-Untuk menjalankan prototype isi data sesuai form, kemudian klik pada tombol predict, prediksi akan muncul setelahnya.
-  
+Untuk menjalankan prototype isi data sesuai form, kemudian klik pada tombol predict, prediksi akan muncul setelahnya.  Prototype dapat diakses melalui link berikut ini
 
 ```
-
+https://students-performances.streamlit.app/
 ```
 
   
