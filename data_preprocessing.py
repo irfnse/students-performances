@@ -7,10 +7,10 @@ scaler_Age_at_enrollment = joblib.load('model/scaler_Age_at_enrollment.joblib')
 scaler_Application_mode = joblib.load('model/scaler_Application_mode.joblib')
 scaler_Curricular_units_1st_sem_approved = joblib.load('model/scaler_Curricular_units_1st_sem_approved.joblib')
 scaler_Curricular_units_1st_sem_enrolled = joblib.load('model/scaler_Curricular_units_1st_sem_enrolled.joblib')
-scaler_Curricular_units_1st_sem_grade = joblib.load('model/scaler_CUrricular_units_1st_sem_grade.joblib')
+scaler_Curricular_units_1st_sem_grade = joblib.load('model/scaler_Curricular_units_1st_sem_grade.joblib')
 scaler_Curricular_units_2nd_sem_approved = joblib.load('model/scaler_Curricular_units_2nd_sem_approved.joblib')
 scaler_Curricular_units_2nd_sem_enrolled = joblib.load('model/scaler_Curricular_units_2nd_sem_enrolled.joblib')
-scaler_Curricular_units_2nd_sem_grade = joblib.load('model/scaler_CUrricular_units_2nd_sem_grade.joblib')
+scaler_Curricular_units_2nd_sem_grade = joblib.load('model/scaler_Curricular_units_2nd_sem_grade.joblib')
 scaler_Debtor = joblib.load('model/scaler_Debtor.joblib')
 scaler_Displaced = joblib.load('model/scaler_Displaced.joblib')
 scaler_Gender = joblib.load('model/scaler_Gender.joblib')
@@ -52,5 +52,5 @@ def data_preprocessing(data):
        'Curricular_units_2nd_sem_enrolled',
        'Curricular_units_2nd_sem_approved', 'Curricular_units_2nd_sem_grade']
     df = df[selected_cols]
-    
+
     return df
